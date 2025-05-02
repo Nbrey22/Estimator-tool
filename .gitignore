@@ -4,3 +4,4 @@
 #ignore node_modules folder to save space and avoid commiting dependencies
 /server/node_modules/
 /client/node_modules/
+node_modules/
