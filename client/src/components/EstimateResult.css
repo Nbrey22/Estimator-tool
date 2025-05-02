@@ -1,0 +1,92 @@
+.estimate-result {
+    width: 50%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.estimate-header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+.estimate-header h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    display: inline-block;
+  }
+
+.customer-info {
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+  }
+  
+.company-info {
+    width: 40%;
+    float: left;
+    margin-top: 25px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+  }
+  
+.section, .estimate-summary {
+    clear: both;
+  }
+
+.customer-info, .company-info, .section, .estimate-summary {
+    margin-bottom: 30px;
+  }
+  
+.customer-info h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+}
+
+.section h3, .estimate-summary h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+  }
+  
+.estimate-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+.estimate-table th, .estimate-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+.estimate-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  
+.estimate-summary p {
+    font-size: 16px;
+    margin: 4px 0;
+    text-align: right;
+  }
+  
+.total-estimate {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+  }

@@ -1,0 +1,16 @@
+.app-header{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #e5e7eb, #9ca3af)
+}
+.header-box{
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid #12293b;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #1e293b;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,6 @@
+# ignore .env files with senstitive info
+.env
+
+#ignore node_modules folder to save space and avoid commiting dependencies
+/server/node_modules/
+/client/node_modules/

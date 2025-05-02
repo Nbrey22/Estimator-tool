@@ -1,0 +1,120 @@
+.estimate-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+.material-box, .labor-box, .business-expenses-box, .customer-info-box{
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #e5e7eb;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow:hidden;
+  }
+  
+  .material-box h3, .labor-box h3, .business-expenses-box h3, .customer-info-box h3 {
+    background-color: #9ca3af;
+    padding: 10px 20px;
+    border-radius: 0;
+    margin: -20px -20px 25px -20px;
+  }
+  
+  .material-box label, .labor-box label, .business-expenses-box label, .customer-info-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .material-box input,
+  .material-box select, 
+  .labor-box input,
+  .labor-box select,
+  .business-expenses-box input,
+  .business-expenses-box select,
+  .customer-info-box input,
+  .customer-info-box select{
+    width: 100%;
+    padding: 6px 8px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .material-box button, .labor-box button {
+    padding: 10px 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .material-box button:hover, .labor-box button:hover {
+    background-color: #0056b3;
+}
+
+.material-list ul, .labor-list ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.material-list li, .labor-list li {
+  padding: 5px;
+  margin-bottom: 5px; 
+  background-color: transparent; 
+  border: none; 
+  display: block; 
+  word-wrap: break-word; 
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: 1px solid #cc0000;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+  border-color: #990000;
+}
+
+.labor-box, .business-expenses-box, .material-box, .customer-info-box{
+  margin-top: 50px;
+}
+
+.generate-estimate {
+  margin-top: 30px; /* adds space above the button */
+  margin-bottom: 40px; /* adds space below the button */
+  text-align: center;
+}
+
+.generate-estimate button {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.generate-estimate button:hover {
+  background-color: #0056b3;
+}
