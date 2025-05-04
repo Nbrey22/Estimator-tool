@@ -7,6 +7,25 @@ body{
   margin: 0; /* ensure entire webpage is color*/
 }
 
+.view-estimates-button {
+  padding: 12px 18px;
+  background-color: #007bff;
+  font-size: 1.05rem;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 80px; 
+}
+.view-estimates-button.open{
+  margin-bottom: 10px;
+}
+
+.view-estimates-button:hover {
+  background-color: #0056b3;
+}
+
 /*
 .App {
   text-align: center;

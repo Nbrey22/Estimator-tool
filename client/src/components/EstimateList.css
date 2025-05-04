@@ -1,0 +1,43 @@
+.estimate-list-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.estimate-list {
+    margin-top: 20px;
+  }
+  
+  .estimate-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  .estimate-item h3 {
+    margin: 0;
+  }
+  
+  .estimate-item p {
+    margin: 5px 0;
+  }
+  
+  button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  button:active {
+    background-color: #0056b3;
+  }

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './EstimateResult.css'; 
 import axios from 'axios';
+
 
 const EstimateResult = ({ 
     customer, 
@@ -10,7 +11,7 @@ const EstimateResult = ({
     finalCostsPercentage, 
     total 
   }) => {
-
+  
   // function to save estimates
   const saveEstimate = async () => {
     try {
@@ -24,7 +25,7 @@ const EstimateResult = ({
       };
 
       // send POST request to backend API
-      const response = await axios.post('/api/estimates', estimateData);
+      const response = await axios.post('http://localhost:3001/api/estimates', estimateData);
 
       // if successful, notify user and log the result
       alert('Estimate saved successfully!');
@@ -35,12 +36,12 @@ const EstimateResult = ({
       alert('Failed to save estimate');
     }
   };
-
+  
     return (
-      <div className="estimate-result">
-    <div className="estimate-header">
-      <h1>Job Estimate</h1>
-    </div>
+      <div className="estimate-result" /*ref={estimateRef}*/>
+        <div className="estimate-header">
+          <h1>Job Estimate</h1>
+      </div>
     
       <div className="company-info">
         <h3>Company Information</h3>
@@ -117,7 +118,7 @@ const EstimateResult = ({
       <h3>Estimate Summary</h3>
       <p><strong>Material Markup:</strong> {materialMarkupPercentage}%</p>
       <p><strong>Final Cost Percentage:</strong> {finalCostsPercentage}%</p>
-      <p className="total-estimate"><strong>Total Estimate:</strong> ${total.toFixed(2)}</p>
+      <p className="total-estimate"><strong>Total Estimate:</strong> ${Number(total).toFixed(2)}</p>
     </div>
     
     {/* save Button displays after the estimate result */}
