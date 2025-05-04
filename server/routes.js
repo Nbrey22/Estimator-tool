@@ -80,27 +80,4 @@ router.post('/', async (req, res) => {
     }
   });
 
-// GET specific material category (lumber, finishing_materials, hardware, misc_materials)
-router.get('/:category', async (req, res) => {
-  const { category } = req.params;
-
-  // whitelist allowed categories (tables)
-  const allowedCategories = ['lumber', 'finishing_materials', 'hardware', 'misc_materials'];
-
-  if (!allowedCategories.includes(category)) {
-    return res.status(400).json({ error: 'Invalid material category' });
-  }
-
-  const query = `SELECT id, name, unit_price FROM ${category} ORDER BY name`;
-  console.log('Executing query:', query); // Log the query
-
-  try {
-    const result = await pool.query(`SELECT id, name, unit_price FROM ${category} ORDER BY name`);
-    res.json(result.rows);
-  } catch (err) {
-    console.error(`Error fetching ${category} materials:`, err);
-    res.status(500).json({ error: `Failed to fetch ${category} materials` });
-  }
-});
-  
-  module.exports = router;
+module.exports = router;
